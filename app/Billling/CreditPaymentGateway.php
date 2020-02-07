@@ -11,6 +11,10 @@ class CreditPaymentGateway implements PaymentGatewayInterface
     private $currency;
     private $discount = 0;
 
+    public function __construct($currency)
+    {
+        $this->currency = $currency;
+    }
     public function charge($amount)
     {
         $fees = $amount * 0.02;

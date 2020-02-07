@@ -37,13 +37,12 @@ class AppServiceProvider extends ServiceProvider
     {
         Builder::defaultStringLength(191);
 //        View::share('channels', Channel::all());
-   /*     View::composer(['channels.index'],function($view){
+        View::composer(['channels.index'],function($view){
             $view->with(
                 [
                     'channels'=> Channel::all()
                 ]
             );
-        });*/
-
+        });
     }
 }
